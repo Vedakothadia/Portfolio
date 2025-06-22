@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>V-folio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
   </head>
   <body>
     <div class="circle-cursor"></div>
@@ -23,17 +24,5 @@
         <a href="#">contact</a>
       </nav>
     </header>
-    <script>
-      const cursor = document.querySelector(".circle-cursor");
-      const shadow = document.querySelector(".cursor-shadow");
-
-      document.addEventListener("mousemove", (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-
-        cursor.style.transform = `translate(${x}px, ${y}px)`;
-        shadow.style.transform = `translate(${x}px, ${y}px)`;
-      });
-    </script>
   </body>
 </html>
