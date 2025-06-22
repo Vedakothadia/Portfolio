@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V-folio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="circle-cursor"></div>
+    <div class="cursor-shadow"></div>
+
+    <img class="img-gradient" src="gradient.png" alt="gradient" />
+    <div class="blur"></div>
+
+    <header>
+      <h1 class="logo">V-Folio</h1>
+      <nav>
+        <a class="a" href="#">Home</a>
+        <a href="#">Education</a>
+        <a href="#">Skills</a>
+        <a href="#">Project</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+    <script>
+      const cursor = document.querySelector(".circle-cursor");
+      const shadow = document.querySelector(".cursor-shadow");
+
+      document.addEventListener("mousemove", (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        cursor.style.transform = `translate(${x}px, ${y}px)`;
+        shadow.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    </script>
+  </body>
+</html>
