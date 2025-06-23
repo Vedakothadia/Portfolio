@@ -46,13 +46,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
+    
 }
 
 header h1{
     margin: 0;
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 nav{
@@ -69,6 +69,7 @@ nav a{
     text-decoration: none;
     color: inherit;
     position: relative;
+    z-index: 999;
 }
 
 nav a:hover{
@@ -214,18 +215,28 @@ main{
 
 .btn-signing-main{
   text-decoration: none;
-  background-color: lightgray;
-  color: black;
+  box-shadow: 0 0 15px rgba(552,225,225, 0.3);
   padding: 0.6rem 2.5rem;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   transition: background-color 0.2s ease;
+  background: linear-gradient(to right, #8f8f8f8c, #954dc47e, #7300df7a, #5300a073, #9a9a9a70, #9292928e);
+  background-size: 200%;
+  color: white;
+  animation: animationGradient 2.5s linear infinite ;
+  box-shadow: 0 0 15px rgba(552,225,225, 0.3);
 }
 
+@keyframes animationGradient{
+  to{
+    background-position: 200%;
+  
+  }
+}
 .btn-signing-main:hover{
-  background-color: #c0c0c0;
+  background-color: #484848;
 }
 .robot-3d{
   position: absolute;

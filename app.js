@@ -8,3 +8,5 @@ const cursor = document.querySelector(".circle-cursor");
         cursor.style.transform = `translate(${x}px, ${y}px)`;
         shadow.style.transform = `translate(${x}px, ${y}px)`;
       });
+
+      
